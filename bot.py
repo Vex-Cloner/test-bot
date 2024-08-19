@@ -76,5 +76,6 @@ class BotClient(Client):
                 self.logout()
 
 if __name__ == "__main__":
-    bot_client = BotClient("fixxyktimoh@uma3.be", "Nota3210@#")
-    bot_client.startListening()
+    bot_client = login_to_facebook()
+    if bot_client:
+        bot_client.startListening()
