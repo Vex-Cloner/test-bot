@@ -8,8 +8,8 @@ def login_to_facebook():
             session = json.load(f)
             client = Client(None, None, session_cookies=session)
     except (FileNotFoundError, Exception):
-        email = "email@example.com"
-        password = "your_password"
+        email = "fixxyktimoh@uma3.be"
+        password = "Nota3210@#"
         try:
             client = Client(email, password)
         except fbchat.FBchatUserError as e:
